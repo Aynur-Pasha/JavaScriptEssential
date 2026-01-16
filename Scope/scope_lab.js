@@ -1,3 +1,4 @@
+"use strict";
 // Global scope
 var globalVar = "I'm a global variable";
 let globalLet = "I'm also global, but scoped with let";
@@ -46,9 +47,11 @@ show();
     // constBlock = "const block 2"; // error
     console.log(constBlock);
 }
-letBlock = "let block 3";
-console.log(letBlock);
 varBlock = "var block 3";
 console.log(varBlock);
-constBlock = "const block 3";
-console.log(constBlock);
+// letBlock = "let block 3"; // error
+// console.log(letBlock);
+// constBlock = "const block 3"; // error 
+// console.log(constBlock);
+
+// without "use strict"; at the top the last 4 lines give no errors - because new global variables are created with the same name
